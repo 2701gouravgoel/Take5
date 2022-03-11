@@ -1,0 +1,26 @@
+.sidenav1 {
+    height: 100%; 
+    width: 250px; 
+    position: fixed; 
+    z-index: 10; 
+    top: 0; 
+    left: 0;
+    background: #FFFFFF; 
+    overflow-x: hidden; 
+    padding-top: 0px; 
+    transition: 0.5s; 
+  }
+  
+.buttonContainer{
+    margin-left: 10px;
+    left: 0%;
+    right: 54.62%;
+    top: 0%;
+    bottom: 91%;
+    font-family: 'SF Pro Display';
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 44px;
+    text-align: left;
+    color: #C3D2D5;
+  }

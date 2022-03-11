@@ -1,0 +1,231 @@
+  
+  .outerContainer{
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      top: 0px;
+      left: 250px;
+      width: calc(100vw - 250px);
+      height: calc(100vh);
+      background-color: rgb(0,0,0,0.1);
+      
+      overflow-x: auto;
+  }
+  .mainAreaOuterContainer{
+      position: relative;
+      width: calc(100%-250px);
+      height: 100%;
+      padding:10px;
+      padding-bottom: 20px;
+      min-width: 1000px;
+      display: flex;
+  }
+  .chatList{
+    width: 30%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 18px 0px 0px 0px;
+  }
+  .leftMessage{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+  }
+  
+  .rightMessage{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #484848;
+  }
+  .chatScreen{
+    position: relative;
+    width: 100%;
+    height:100% ;
+    overflow-y: auto;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 18px;
+  }
+  .chatScreenInput{
+    position: absolute;
+    width: 625px;
+    height: 50px;
+    left: 5%;
+    bottom: 1%;
+
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    /* Drop Shadow */
+
+    box-shadow: 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725);
+    border-radius: 10px;
+  }
+  .userDetails{
+    margin-left: 10px;
+  }
+  .chatScreenUserName{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 188.2%;
+    color: #000000;
+    display: flex;
+    align-self: left;
+  }
+  
+  .chatScreenLastActivate{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #959595;
+    display: flex;
+    align-self: left;
+  }
+  .ListContainer{
+      position: relative;
+      height: calc(100%-70px);
+      padding-right: 10px;
+      min-width: 150px;
+      border: 1px solid #EFEFEF;
+      box-sizing: border-box;
+      border-radius: 0px 0px 0px 18px;
+      background: #FFFFFF;
+  }
+  .plusIcon{
+    position: absolute;
+    left: 10px;
+    top: 14px;
+  }
+  .chatScreenHeader{
+    height: 69px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+  }
+  .customerList{
+      position: relative;
+      width: 100%;
+      height: calc(100% - var(--opponent-height));
+     
+      /* background-color:#fff;
+      border: 1px solid #e2e2e2;
+      border-radius: 0px 0px 3px 3px; */
+      overflow-y: auto;
+      /* box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  }
+  .messageLeftItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    position: relative;
+    max-width: 318px;
+    background: #F68B00;
+    box-shadow: 0px 12.1723px 12.1723px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .messageRightItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    margin-left: auto;
+    max-width: 318px;
+    height: 71.4px;
+    background: #F0F0F0;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  .listHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .chats{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #000000;
+  }
+  .newChats{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #F68B00;
+  }
+  .allConversations{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+    height: 69px;
+    border-bottom-width: 1px;
+    border: 1px solid #EFEFEF;
+    border-radius: 18px 0px 0px 0px;  
+  }
+  .chatItem{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .messageDateAlign{
+    margin-left: 11px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .msgInfo{
+    width: 100%;
+  }
+  .userName{
+    /* height: 29px; */
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 188.2%;
+    display: flex;
+    /* identical to box height, or 28px */
+    color: #000000;
+  }
+  .lastMessage{
+  /* height: 20px; */
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.65);
+}
