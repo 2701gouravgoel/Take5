@@ -11,6 +11,35 @@
       
       overflow-x: auto;
   }
+  .inputSearch{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #000000; 
+  }
+  
+  .searchIcon{
+    margin-right: 10px;
+    margin-top: 10px;
+    color: #000000; 
+  }
+  .searchPanel{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 483px;
+    height: 52px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
   .mainAreaOuterContainer{
       position: relative;
       width: calc(100%-250px);
@@ -47,13 +76,19 @@
   }
   .chatScreen{
     position: relative;
-    width: 100%;
+    width: 75%;
     height:100% ;
     overflow-y: auto;
     background: #FFFFFF;
     border: 1px solid #EFEFEF;
     box-sizing: border-box;
     border-radius: 18px;
+  }
+  .chatScreenImage{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
   }
   .chatScreenInput{
     position: absolute;
@@ -66,6 +101,8 @@
     border: 1px solid #E1E1E1;
     box-sizing: border-box;
     /* Drop Shadow */
+    display: flex;
+    justify-content: space-between;
 
     box-shadow: 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725);
     border-radius: 10px;
@@ -78,10 +115,10 @@
     font-style: normal;
     font-weight: 700;
     font-size: 17px;
-    line-height: 188.2%;
     color: #000000;
     display: flex;
     align-self: left;
+    margin-top: 5px;
   }
   
   .chatScreenLastActivate{
@@ -89,7 +126,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     color: #959595;
@@ -107,8 +143,24 @@
       background: #FFFFFF;
   }
   .plusIcon{
+    margin-left: 10px;
+    align-self: center;
+    height: 20px;
+    width: 20px;
+  }
+  
+  .emojiIcon{
+    margin-right: 10px;
+    align-self: center;
+    height: 20px;
+    width: 20px;
+  }
+  input:focus{
+    outline: none;
+}
+  .plusIcon2{
     position: absolute;
-    left: 10px;
+    left: 60%;
     top: 14px;
   }
   .chatScreenHeader{
@@ -122,7 +174,7 @@
   .customerList{
       position: relative;
       width: 100%;
-      height: calc(100% - var(--opponent-height));
+      height: 100% ;
      
       /* background-color:#fff;
       border: 1px solid #e2e2e2;
@@ -130,13 +182,26 @@
       overflow-y: auto;
       /* box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   }
+  .line{
+    width: 100%-10px;
+    height: 0px;
+    margin-left: 10px;
+    border: 1px solid #F4F4F4;
+  }
+  .line2{
+    width: 100%;
+    height: 0px;
+    border: 1px solid #F4F4F4;
+  }
   .messageLeftItem{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 10px;
     position: relative;
-    max-width: 318px;
+    width: max-content;
+    margin-left: 26px;
+    max-width: 70%;
     background: #F68B00;
     box-shadow: 0px 12.1723px 12.1723px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
@@ -144,15 +209,121 @@
   }
   .messageRightItem{
     display: flex;
+    margin-right: 26px;
     flex-direction: column;
     align-items: flex-start;
     padding: 10px 10px;
     margin-left: auto;
-    max-width: 318px;
-    height: 71.4px;
+    width: max-content;
+    max-width: 70%;
     background: #F0F0F0;
     border-radius: 20px;
     margin-top: 10px;
+  }
+  .emptyChatHeading{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    margin-top: 25px;
+    color: #000000;
+  }
+  .emptyChatScreen
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .emptyChatDescription{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #B0B0B0;
+    margin-top: 8px;
+  }
+  .greetingDiv{
+    display: flex;
+    align-self: center;
+    width: 250px;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .sayHello{
+    width: 144px;
+    height: 38px;
+    background: #F4F4F4;
+    border-radius: 26px;
+  }
+  .sayHelloText{
+    font-style: normal;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 15px;
+    align-self:center;
+    text-align: center;
+    color: #000000;
+  }
+  .helloHand{
+    width: 61px;
+    height: 38px;
+    left: 1088px;
+    top: 593px;
+    background: #F4F4F4;
+    border-radius: 26px;
+  }
+  .popupforshare{
+    color: #000000;
+    width: 160px;
+    height: 142.5px;
+    background: #FFFFFF;
+    border: 0.891892px solid #DEDEDE;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 89.1892px 71.3513px rgba(165, 165, 165, 0.07), 0px 37.2611px 29.8089px rgba(165, 165, 165, 0.0503198), 0px 19.9216px 15.9373px rgba(165, 165, 165, 0.0417275), 0px 11.1679px 8.9343px rgba(165, 165, 165, 0.035), 0px 5.93117px 4.74494px rgba(165, 165, 165, 0.0282725), 0px 2.46809px 1.97447px rgba(165, 165, 165, 0.0196802);
+  }
+  .menuBar{
+    position: absolute;
+    left: 5%;
+    bottom: 1%;
+    margin-bottom: 60px;
+  }
+  .triangle{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    margin-left: 6.3%;
+    border-top: 10px solid #dedede;
+    /* background: #FFFFFF; */
+    /* border: 0.891892px solid #DEDEDE; */
+    /* box-sizing: border-box; */
+    /* box-shadow: 0px 89.1892px 71.3513px rgba(165, 165, 165, 0.07), 0px 37.2611px 29.8089px rgba(165, 165, 165, 0.0503198), 0px 19.9216px 15.9373px rgba(165, 165, 165, 0.0417275), 0px 11.1679px 8.9343px rgba(165, 165, 165, 0.035), 0px 5.93117px 4.74494px rgba(165, 165, 165, 0.0282725), 0px 2.46809px 1.97447px rgba(165, 165, 165, 0.0196802); */
+  
+  }
+  .menuItem{
+    width: 100px;
+    height: 40px;
+    display: flex;
+  }
+  .menuText{
+    align-self: center;
+    margin-left: 15px;
+  }
+  .gifEmojiDiv{
+    margin-right: 10px;
+    display: flex;
+    width: 50px;
+  }
+  .helloHandText{
+    font-family: 'DM Sans';
+    font-style: normal;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
   }
   .listHeader{
     display: flex;
@@ -165,6 +336,8 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
     /* identical to box height */
     color: #000000;
   }
@@ -175,6 +348,17 @@
     font-size: 15px;
     line-height: 20px;
     color: #F68B00;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .conversationHeader{
+
+    height: 69px;
+    border-bottom-width: 1px;
+    border: 1px solid #EFEFEF;
+    border-radius: 18px 0px 0px 0px; 
+    display: flex;
+    justify-content: space-between;
   }
   .allConversations{
     font-family: 'DM Sans';
@@ -186,16 +370,30 @@
     align-items: center;
     letter-spacing: -0.5px;
     color: #000000;
-    height: 69px;
-    border-bottom-width: 1px;
-    border: 1px solid #EFEFEF;
-    border-radius: 18px 0px 0px 0px;  
+    margin-left: 20px; 
+  }
+  .searchIcon2{
+    align-self: center;
+    margin-right: 20px;
   }
   .chatItem{
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 60px;
     margin-top: 10px;
     margin-left: 10px;
+  }
+  .time{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-start;
+    color: #616161;
+    margin-right: 15px;
   }
   .messageDateAlign{
     margin-left: 11px;
@@ -208,23 +406,34 @@
     width: 100%;
   }
   .userName{
-    /* height: 29px; */
+    position: relative;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 188.2%;
     display: flex;
-    /* identical to box height, or 28px */
     color: #000000;
   }
+  .selectedChat{
+    background: rgba(246, 139, 0, 0.07);
+    border: 1px solid rgba(246, 139, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 14px;
+  }
+  .selectedUserName{
+    font-family: 'DM Sans';
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #F68B00;
+  }
   .lastMessage{
-  /* height: 20px; */
+  position: relative;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 11px;
-  line-height: 20px;
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.65);

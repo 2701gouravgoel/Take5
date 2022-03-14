@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 export default function SideBar() {
     return <>
         <div className='sidenav1'>
+            <img  src={require('./images/logo.png')}/>
             <div className='buttonContainer' >
                 <span>
                     <i className="fas fa-comments fa-lg"></i>
