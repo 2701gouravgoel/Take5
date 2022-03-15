@@ -44,30 +44,30 @@ function News() {
                 </div>
             </div>
         </div>
-    <div className='mainNews'>
-        <img className='image' src={require('./images/profilepic.png')}/>
-        <div className='div1'>
-            <div className='techNews'>
-                TECH NEWS
+        <div className='mainNews'>
+            <img className='image' src={require('./images/profilepic.png')}/>
+            <div className='div1'>
+                <div className='techNews'>
+                    TECH NEWS
+                </div>
+                <div className='date'>
+                {news[index].date}
+                </div>
             </div>
-            <div className='date'>
-            {news[index].date}
+            <div className='mainHeading'>
+            {news[index].heading}
+            </div>
+            
+            <div className='aboutNews'>
+            {news[index].description}
             </div>
         </div>
-        <div className='mainHeading'>
-        {news[index].heading}
+        <div onClick={goLeft} className='leftArrow'>
+            <ArrowBack style={{alignSelf:"center",marginTop:12}}/>
         </div>
-        
-        <div className='aboutNews'>
-        {news[index].description}
-        </div>
-    </div>
-    </div>
-    <div onClick={goLeft} className='leftArrow'>
-        <ArrowBack style={{alignSelf:"center",marginTop:12}}/>
-    </div>
-    <div onClick={goRight} className='rightArrow'>
-        <ArrowForward  style={{alignSelf:"center",marginTop:12}}/>
+        <div onClick={goRight} className='rightArrow'>
+            <ArrowForward  style={{alignSelf:"center",marginTop:12}}/>
+        </div>    
     </div>
     </div>
 }
