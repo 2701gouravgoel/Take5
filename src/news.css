@@ -17,7 +17,7 @@
 }
 .fullPage{
     background-color: #EEEEEE;
-    height:  calc(100%);
+    height:  100%;
 }
 .newsHead{
     font-family: 'DM Sans';
@@ -80,6 +80,7 @@
 }
 .mainNews{
     position: absolute;
+    align-self: center;
     width: 40%;
     /* height: 60%; */
     min-width: 250px;
@@ -90,7 +91,50 @@
     background: #FFFFFF;
     border-radius: 12.8609px;
     z-index: 10;
-    padding-bottom: 10px;
+}
+.bottomOfPost{
+    margin-top: 57px;
+    width: 100%;
+    height: 73px;
+    background: #FAFAFA;
+    border-radius: 0px 0px 12.8609px 12.8609px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.forwardIcon{
+    width: 21px;
+    height: 17.5px;
+    align-self: center;
+    margin-left: 30px;
+}
+.likeTab{
+    width: 75px;
+    height: 40.74px;
+    background: #FFFFFF;
+    border-radius: 32.3837px;
+    align-self: center;
+    display: flex;
+    margin-right: 30px;
+}
+.likeIcon{
+    width: 23.36px;
+    height: 20.37px;
+    align-self: center;
+    margin-left: 16px;
+}
+.likeText{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5802px;
+    line-height: 17px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #4D4D4D;
+    align-self: center;
+    margin-left: 5px;
 }
 @media (max-width: 600px){
       .mainNews{
@@ -120,9 +164,11 @@
 }
 .image{
     position: relative;
-    height: 200px;
-    width: 96%;
-    left: 2%;
+    /* height: 200px; */
+    display: flex;
+    align-self: 'center';
+    /* width: 96%; */
+    /* left: 2%; */
     top:10px;
     background: #F8F8F8;
     border-radius: 10px;
@@ -160,11 +206,12 @@
 .div1{
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
     justify-content: space-between;
 }
 .mainHeading{
     position: relative;
-    margin-top:20px;
+    margin-top:30px;
     left: 3%;
     max-width: 90%;
     text-align: left;
@@ -180,7 +227,7 @@
 }
 .aboutNews{
     position: relative;
-    margin-top:20px;
+    margin-top:16px;
     left: 3%;
     max-width: 90%;
     text-align: left;
