@@ -234,7 +234,7 @@ function Chat() {
                 <div className='ListContainer'>
                     <div className='listHeader'>
                         <div className='chats'>Chats</div>
-                        <div className='newChats'>New Chats</div>
+                        <div className='newChats'>New Chat</div>
                     </div>
                     <div className='customerList' id="list1">
                         {elm}

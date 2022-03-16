@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans');
 .topHalf{
     background: #F68B00;
     height: 30%;
@@ -81,6 +82,7 @@
     position: absolute;
     width: 40%;
     /* height: 60%; */
+    min-width: 250px;
     top:25%;
     left: 30%;
     display: flex;
